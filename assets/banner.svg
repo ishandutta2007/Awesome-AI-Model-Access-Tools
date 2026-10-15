@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accent-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+
+    <!-- Glass Card Gradient -->
+    <linearGradient id="glass-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-light" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-intense" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      /* Dynamic Ambient Animations */
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.35; }
+        50% { transform: scale(1.18) translate(25px, -20px); opacity: 0.6; }
+      }
+      @keyframes pulseOrb2 {
+        0%, 100% { transform: scale(1.1) translate(0px, 0px); opacity: 0.4; }
+        50% { transform: scale(0.9) translate(-30px, 20px); opacity: 0.2; }
+      }
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        50% { transform: translateY(-20px) translateX(15px); opacity: 0.8; }
+      }
+      @keyframes flowDash {
+        0% { stroke-dashoffset: 120; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatPill {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatPillDelayed {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+
+      .bg-ambient-1 {
+        animation: pulseOrb 9s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .bg-ambient-2 {
+        animation: pulseOrb2 11s ease-in-out infinite;
+        transform-origin: 1000px 320px;
+      }
+      .p1 { animation: floatParticle 6s ease-in-out infinite; }
+      .p2 { animation: floatParticle 8s ease-in-out infinite 1.5s; }
+      .p3 { animation: floatParticle 7s ease-in-out infinite 3s; }
+      .data-stream {
+        stroke-dasharray: 8 16;
+        animation: flowDash 3s linear infinite;
+      }
+      .data-stream-reverse {
+        stroke-dasharray: 6 12;
+        animation: flowDash 4s linear infinite reverse;
+      }
+      .pill-float-1 { animation: floatPill 6s ease-in-out infinite; }
+      .pill-float-2 { animation: floatPillDelayed 7s ease-in-out infinite; }
+
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+      }
+      .badge-label {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="20" fill="url(#bg-grad)" />
+  <rect width="1198" height="418" x="1" y="1" rx="19" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Ambient Dynamic Blobs in Background (Behind Text & Cards) -->
+  <g opacity="0.45">
+    <circle class="bg-ambient-1" cx="220" cy="110" r="170" fill="#6366f1" filter="url(#glow-intense)" />
+    <circle class="bg-ambient-2" cx="980" cy="310" r="190" fill="#ec4899" filter="url(#glow-intense)" />
+    <circle cx="600" cy="380" r="140" fill="#06b6d4" opacity="0.25" filter="url(#glow-intense)" />
+  </g>
+
+  <!-- Subtle Tech Grid Lines in Background -->
+  <g stroke="#334155" stroke-width="0.75" stroke-opacity="0.25">
+    <line x1="80" y1="0" x2="80" y2="420" />
+    <line x1="240" y1="0" x2="240" y2="420" />
+    <line x1="400" y1="0" x2="400" y2="420" />
+    <line x1="560" y1="0" x2="560" y2="420" />
+    <line x1="720" y1="0" x2="720" y2="420" />
+    <line x1="880" y1="0" x2="880" y2="420" />
+    <line x1="1040" y1="0" x2="1040" y2="420" />
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+  </g>
+
+  <!-- Dynamic Curved Data Streams (Animated Dashes) -->
+  <path class="data-stream" d="M -50 90 Q 300 20 600 90 T 1250 80" fill="none" stroke="url(#primary-glow)" stroke-width="2.5" opacity="0.6" />
+  <path class="data-stream-reverse" d="M -50 360 Q 350 420 700 340 T 1250 350" fill="none" stroke="url(#accent-cyan)" stroke-width="2" opacity="0.5" />
+  <path class="data-stream" d="M 100 420 C 300 320 400 180 600 200 C 800 220 900 320 1150 240" fill="none" stroke="url(#accent-amber)" stroke-width="1.5" opacity="0.35" />
+
+  <!-- Floating Particles -->
+  <circle class="p1" cx="280" cy="80" r="3.5" fill="#a5b4fc" />
+  <circle class="p2" cx="890" cy="120" r="4" fill="#f472b6" />
+  <circle class="p3" cx="720" cy="380" r="3" fill="#67e8f9" />
+  <circle class="p1" cx="150" cy="340" r="3.5" fill="#818cf8" />
+  <circle class="p2" cx="1060" cy="220" r="4.5" fill="#38bdf8" />
+
+  <!-- Bottom Interactive / Dynamic Metric Feature Cards (Layered cleanly below text) -->
+  <g class="pill-float-1" transform="translate(100, 310)">
+    <rect width="210" height="52" rx="14" fill="url(#glass-card)" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.4" filter="url(#glow-light)" />
+    <circle cx="28" cy="26" r="10" fill="#6366f1" fill-opacity="0.25" />
+    <circle cx="28" cy="26" r="4.5" fill="#818cf8" />
+    <text x="48" y="24" fill="#94a3b8" class="badge-label" font-size="11">GATEWAY ROUTING</text>
+    <text x="48" y="40" fill="#f8fafc" class="badge-label" font-weight="700">Multi-Provider Failover</text>
+  </g>
+
+  <g class="pill-float-2" transform="translate(340, 310)">
+    <rect width="230" height="52" rx="14" fill="url(#glass-card)" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.4" filter="url(#glow-light)" />
+    <circle cx="28" cy="26" r="10" fill="#06b6d4" fill-opacity="0.25" />
+    <circle cx="28" cy="26" r="4.5" fill="#22d3ee" />
+    <text x="48" y="24" fill="#94a3b8" class="badge-label" font-size="11">FREE ACCESS PLUGINS</text>
+    <text x="48" y="40" fill="#f8fafc" class="badge-label" font-weight="700">Zero API Key Channels</text>
+  </g>
+
+  <g class="pill-float-1" transform="translate(600, 310)">
+    <rect width="230" height="52" rx="14" fill="url(#glass-card)" stroke="#ec4899" stroke-width="1.2" stroke-opacity="0.4" filter="url(#glow-light)" />
+    <circle cx="28" cy="26" r="10" fill="#ec4899" fill-opacity="0.25" />
+    <circle cx="28" cy="26" r="4.5" fill="#f472b6" />
+    <text x="48" y="24" fill="#94a3b8" class="badge-label" font-size="11">ENTERPRISE PLATFORMS</text>
+    <text x="48" y="40" fill="#f8fafc" class="badge-label" font-weight="700">Hyperscalers &amp; Scaleups</text>
+  </g>
+
+  <g class="pill-float-2" transform="translate(860, 310)">
+    <rect width="240" height="52" rx="14" fill="url(#glass-card)" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.4" filter="url(#glow-light)" />
+    <circle cx="28" cy="26" r="10" fill="#f59e0b" fill-opacity="0.25" />
+    <circle cx="28" cy="26" r="4.5" fill="#fbbf24" />
+    <text x="48" y="24" fill="#94a3b8" class="badge-label" font-size="11">OPEN-SOURCE ECOSYSTEM</text>
+    <text x="48" y="40" fill="#f8fafc" class="badge-label" font-weight="700">Self-Hosted Gateways</text>
+  </g>
+
+  <!-- High-Contrast Foreground Content (Title, Subtitle, Tags) -->
+  <!-- Top Category Chip -->
+  <g transform="translate(470, 48)">
+    <rect width="260" height="32" rx="16" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+    <text x="130" y="21" fill="#c7d2fe" class="badge-label" text-anchor="middle">⚡ CURATED AWESOME COLLECTION</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="600" y="142" text-anchor="middle" class="title-text">
+    <tspan fill="#ffffff">Awesome AI Model </tspan>
+    <tspan fill="url(#primary-glow)">Access Tools</tspan>
+  </text>
+
+  <!-- Explanatory Subtitle in Foreground -->
+  <text x="600" y="196" text-anchor="middle" class="subtitle-text" fill="#94a3b8">
+    Production AI Gateways • Multi-Provider Routers • Free Access Plugins • Self-Hosted Inference
+  </text>
+  <text x="600" y="232" text-anchor="middle" class="subtitle-text" fill="#64748b" font-size="16">
+    Comprehensive Directory of Enterprise SaaS Platforms &amp; Star-Ranked Open-Source Projects
+  </text>
+</svg>
