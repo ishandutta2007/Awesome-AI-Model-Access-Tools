@@ -30,6 +30,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -40,67 +41,24 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global AI model access and cloud inference gateway sector is estimated at **$15B - $20B** (part of the broader $100B+ generative AI infrastructure and cloud market). The sector is **moderately concentrated at the top** among hyperscalers and frontier lab partnerships (Microsoft/OpenAI, Amazon/Anthropic, Google Cloud) which dominate enterprise workloads, but exhibits a **vibrant, fragmented long tail** of specialized inference engines, aggregator gateways, and open-weight model hosts competing aggressively on cost, latency, and niche domain capabilities.
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[OpenAI API Enterprise](https://openai.com/enterprise/)**  
-
-  Enterprise access to GPT models with higher rate limits, dedicated capacity, and compliance features. Includes Azure OpenAI Service for Microsoft ecosystem integration.
-
-
-
-- **[Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service)**  
-
-  Microsoft's managed OpenAI models with enterprise security, compliance, and regional data residency. Integrated with Azure ecosystem.
-
-
-
-- **[AWS Bedrock](https://aws.amazon.com/bedrock/)**  
-
-  Fully managed service for foundation models from leading AI companies. Features model evaluation, guardrails for safe AI, knowledge bases for RAG, and agents for task automation.
-
-
-
-- **[Google Vertex AI](https://cloud.google.com/vertex-ai)**  
-
-  Unified ML platform with Gemini models, Model Garden, and enterprise-grade MLOps. Features Vertex AI Studio for prompt testing.
-
-
-
-- **[Anthropic Enterprise](https://www.anthropic.com/enterprise)**  
-
-  Enterprise access to Claude models with higher rate limits, priority support, and compliance features.
-
-
-
-- **[Cohere Enterprise](https://cohere.com/enterprise)**  
-
-  Enterprise access to Cohere's language models with deployment flexibility (cloud, on-prem, VPC).
-
-
-
-- **[AI21 Labs](https://www.ai21.com/)**  
-
-  Enterprise NLP platform with Jurassic models and task-specific APIs.
-
-
-
-- **[Together AI](https://www.together.ai/)**  
-
-  Full-stack generative AI platform with managed inference for open models. Features instant deployment, auto-scaling, and pay-per-token pricing.
-
-
-
-- **[Mistral Enterprise](https://mistral.ai/)**  
-
-  Enterprise access to Mistral's open-weight models with deployment flexibility and commercial licensing.
-
-
-
-- **[Scale AI](https://scale.com/)**  
-
-  Data platform for AI with model evaluation, RLHF preference data collection, and model benchmarking.
+| Platform | Company Scale (Valuation / Market Cap) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service)** | Microsoft Market Cap: ~$3.1T | $0.00015 / 1K prompt tokens, $0.0006 / 1K completion tokens (GPT-4o-mini) | 30-day trial with $200 Azure credits; includes 55+ always-free Azure services | Microsoft's managed OpenAI models with enterprise security, compliance, and regional data residency. Integrated with Azure ecosystem. |
+| **[Google Vertex AI](https://cloud.google.com/vertex-ai)** | Alphabet Market Cap: ~$2.1T | $0.00001875 / 1K input characters ($0.075 / 1M tokens), $0.30 / 1M output tokens (Gemini 1.5 Flash) | 90-day trial with $300 Google Cloud credits; free tier offers up to 15 RPM / 1M TPM on select Gemini models via Google AI Studio | Unified ML platform with Gemini models, Model Garden, and enterprise-grade MLOps. Features Vertex AI Studio for prompt testing. |
+| **[AWS Bedrock](https://aws.amazon.com/bedrock/)** | Amazon Market Cap: ~$1.9T | $0.00025 / 1K input tokens, $0.00125 / 1K output tokens (Claude 3 Haiku / Amazon Titan Text Express) | AWS Free Tier offers 3-month free trial of Amazon Bedrock with up to 1,000 monthly input tokens & 200 output tokens on select Titan models | Fully managed service for foundation models from leading AI companies. Features model evaluation, guardrails, knowledge bases for RAG, and agent orchestration. |
+| **[OpenAI API Enterprise](https://openai.com/enterprise/)** | ~$157B Valuation | $0.150 / 1M input tokens, $0.600 / 1M output tokens (GPT-4o-mini); Enterprise tier starts at ~$30/user/month (min 150 seats) | 90-day initial API signup credit of $5 (for eligible phone-verified accounts); ChatGPT free tier provides standard GPT-4o-mini access with dynamic rate limits | Enterprise access to GPT models with higher rate limits, dedicated capacity, SOC 2 compliance, and workspace administrative controls. |
+| **[Anthropic Enterprise](https://www.anthropic.com/enterprise)** | ~$40B Valuation | $0.25 / 1M input tokens, $1.25 / 1M output tokens (Claude 3.5 Haiku); Team plan starts at $30/user/month (min 5 seats) | Free tier via web console with $5 free introductory API credits for new verified organization accounts (valid for 14 days) | Enterprise access to Claude models with higher rate limits, priority support, and enterprise compliance features. |
+| **[Scale AI](https://scale.com/)** | ~$14B Valuation | Scale GenAI Platform starts at $0.02 / model call or $450/month base platform tier for self-serve labeling & fine-tuning pipelines | 30-day free trial on Scale Data Engine / Annotate with up to 500 free labeled data units | Data platform for AI with model evaluation, RLHF preference data collection, enterprise model benchmarking, and data curation. |
+| **[Mistral Enterprise](https://mistral.ai/)** | ~$6.5B Valuation | $0.10 / 1M input tokens, $0.30 / 1M output tokens (Mistral NeMo / Ministral 3B); La Plateforme pay-as-you-go | Permanent free API tier on La Plateforme with 1 req/sec rate limit and 1 billion token/month cap on open-weight models | Enterprise access to Mistral's open-weight and commercial models with deployment flexibility and commercial licensing. |
+| **[Cohere Enterprise](https://cohere.com/enterprise)** | ~$5.5B Valuation | $0.15 / 1M input tokens, $0.60 / 1M output tokens (Command R); Enterprise dedicated clusters starting from $1,500/month | Free Trial Key forever offering up to 40 requests/minute, capped at 1,000 calls/month for non-commercial prototyping | Enterprise access to Cohere's Command and Embed language models with deployment flexibility (multicloud, on-prem, VPC). |
+| **[Together AI](https://www.together.ai/)** | ~$3.5B Valuation | $0.18 / 1M input tokens, $0.18 / 1M output tokens (Llama-3.1-8B-Instruct); Dedicated endpoints start at $1.00/GPU-hour | Free $5 inference credit upon account verification, valid for 90 days across all hosted open-source models | Full-stack generative AI platform with managed inference for open models. Features instant deployment, auto-scaling, and pay-per-token pricing. |
+| **[AI21 Labs](https://www.ai21.com/)** | ~$1.4B Valuation | $0.30 / 1M input tokens, $0.30 / 1M output tokens (Jamba 1.5 Mini); Studio Starter at $29/month | 90-day free trial with $10 in API credits upon registration; free sandbox access limited to 3 RPM | Enterprise NLP platform with Jamba hybrid SSM-Transformer architecture models and task-specific reasoning APIs. |
 
 
 
