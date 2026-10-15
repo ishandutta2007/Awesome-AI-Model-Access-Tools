@@ -66,7 +66,7 @@ The sector is **moderately concentrated at the top** among hyperscalers and fron
 
 > Open-source gateways, local runtime model runners, intelligent cost routers, semantic caches, and agent plugins. Sorted in descending order by GitHub stargazers count.
 
-| Project & Repository | GitHub Stars | License | Key Capabilities & Highlights |
+| Project & Repository | GitHub_Stars | License | Key Capabilities & Highlights |
 | :--- | :---: | :---: | :--- |
 | **[Ollama](https://github.com/ollama/ollama)** | [![Stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers) | MIT | 🦙 Get up and running with Llama 3, Mistral, Gemma 2, DeepSeek, and other large language models locally. Provides an OpenAI-compatible REST API, CLI tool, model library, and multi-GPU acceleration out of the box. |
 | **[vLLM](https://github.com/vllm-project/vllm)** | [![Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers) | Apache-2.0 | 🏎️ High-throughput and memory-efficient LLM serving engine. Powered by PagedAttention, continuous batching, chunked prefill, speculative decoding, and native OpenAI-compatible server APIs. |
@@ -95,7 +95,7 @@ The sector is **moderately concentrated at the top** among hyperscalers and fron
 Contributions are welcome! Please follow these simple steps to add or update projects:
 
 1. 🍴 **Fork** the repository.
-2. 📝 **Add/edit** entries in `README.md` maintaining the existing tabular formatting, star badges, and factual descriptions.
+2. 📝 **Add/edit** entries in `README.md` maintaining the existing tabular formatting, Stars_Badges, and factual descriptions.
 3. 🔎 Verify official links, repository stars, pricing tiers, and licensing details.
 4. 🚀 **Submit a Pull Request** with a concise description of your additions.
 
